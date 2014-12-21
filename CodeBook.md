@@ -1,8 +1,6 @@
 # Code Book
-Title: "CodeBook.md"
 Author: "Saurabh Kumar"
 Date: "Saturday, December 20, 2014"
-Output: html_document
 
 This Code Book describes the data strcture of the tidy data set generated from run_analysis.R and the variables from the features.txt that have been included in the tiday data set. For additional details, please refer to README.
 
