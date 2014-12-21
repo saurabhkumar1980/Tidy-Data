@@ -1,0 +1,68 @@
+# PROJECT : TIDY DATA
+README file for Getting and Cleaning Data course project
+---
+Author: "Saurabh Kumar"
+Date: "Sunday, December 21, 2014"
+---
+
+## Problem Statement
+Create one R script called run_analysis.R that does the following. 
+
+1.Merges the training and the test sets to create one data set.
+
+2.Extracts only the measurements on the mean and standard deviation for each measurement. 
+
+3.Uses descriptive activity names to name the activities in the data set
+
+4.Appropriately labels the data set with descriptive variable names. 
+
+5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+
+## Solution
+
+### Breakdown of function run_analysis
+Function is divided into following logical sections as per the assignment
+
+Section 1. 
+
+  * Read data from data sets - subject, y, X, features and activity_labels  
+  * Combine test and training data. Only X for now. Subject and y combined later.
+
+Section 2.
+
+  *  Filter only mean and std columns  
+  *  Assign Column Names extracted from features.txt and filtered for mean and std
+
+Section 3. 
+
+  *  Merge data set from Section 1 with activity_labels set to get descriptive activity names
+
+Section 4.
+  
+  *  Use information in feature_info.txt to rename columns to more readable names.
+
+Section 5.  
+    
+  *  Calculate Average for each variable for each subject and activity
+  *  Write data to a text file.  
+  
+### Notes  
+  * run_analysis uses reshape2 and plyr package
+  * Any variables that result in a mean() and std() are included. Complete list is included in CodeBook
+
+### Output
+  * Function output is placed in a text file tidy_data.txt
+  * File can be read using
+    read.table("file_path/file_name", header = TRUE)
+
+### Sample Output
+  Result of head(tidy_data.txt)
+```{r}
+head(read.table("tidy_data.txt", header=TRUE))
+```
+  
+
+## Reference
+Source Data : https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+Data structure and details about variables available in CodeBook

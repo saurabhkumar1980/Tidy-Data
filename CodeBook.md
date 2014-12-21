@@ -15,7 +15,16 @@ COLUMN        | DESCRIPTION   | DATA TYPE
 Subject       | An identifier of the subject who carried out the experiment.  | Integer
 Activity      | Activity performed by the subject. It has six distinct values - (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)   | Character
 variable      | Time and frequency domain variables which are either mean or standard deviation. | Character
-Average       | Average of the variable for each combination of Subject and Activity  | Integer
+Average       | Average of the variable for each combination of Subject and Activity      | Numeric
+
+## Tidy Data : Substitutions used
+ORIGINAL NAME | SUBSTITUTION   
+------------- | ------------- 
+t             | Time
+f             | FFT
+Acc           | Accelerometer
+Gyro          | Gyroscope
+Mag           | Magnitude
 
 ## Tidy Data : Variables captured
 VARIABLE                                   | ORIGINAL NAME 
