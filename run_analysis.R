@@ -14,7 +14,7 @@ run_analysis <- function(){
 #                 Calculate Average for each variable for each subject and activity
 #                 Write data to a text file.  
 #
-#  
+# Function assumes data is in WorkingDirectory/UCI HAR Dataset
       library(reshape2)
       library(plyr)  
   
