@@ -55,13 +55,6 @@ Section 5.
   * File can be read using
     read.table("file_path/file_name", header = TRUE)
 
-### Sample Output
-  Result of head(tidy_data.txt)
-```{r}
-head(read.table("tidy_data.txt", header=TRUE))
-```
-  
-
 ## Reference
 Source Data : https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
